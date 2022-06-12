@@ -1,0 +1,11 @@
+package behavioral.chain_of_responsibility;
+
+public abstract class MessageHandler {
+    MessageHandler messageHandler;
+
+    public MessageHandler(MessageHandler messageHandler) {
+        this.messageHandler = messageHandler;
+    }
+
+    abstract void handle(String msg);
+}
